@@ -1,0 +1,20 @@
+[00:00:01.452] Server  LOG     
+[00:00:01.453] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:01.453] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:01.454] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:01.454] Server  LOG     
+[00:00:01.454] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:01.454] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:01.455] Server  LOG     
+[00:00:01.722] Server  LOG      ✓ Ready in 1069ms
+[00:00:24.795] Server  LOG      ○ Compiling / ...
+[00:00:35.859] Server  WARN     ⚠ Cross origin request detected from 192.168.3.6 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:36.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.635] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:38.635] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:38.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.3.6:3000/#order color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.3.6:3000/#order","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766410659023}
+[00:00:52.160] Server  LOG      ○ Compiling /api/orders ...
+[00:01:08.168] Server  ERROR   Admin email sending error: {}

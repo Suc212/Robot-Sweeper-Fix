@@ -11,7 +11,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SweepBot Technologies. All rights reserved.
+            © {new Date().getFullYear()} Korret Stores. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-muted-foreground">
