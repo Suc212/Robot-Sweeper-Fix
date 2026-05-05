@@ -16,6 +16,7 @@ const orderSchema = z.object({
   address: z.string().min(1, "Address is required"),
   phone: z.string().min(1, "Phone number is required"),
   whatsapp: z.string().min(1, "WhatsApp number is required"),
+  email: z.string().optional(),
   quantity: z.string().min(1, "Quantity is required"),
   totalPrice: z.string().min(1, "Total price is required"),
   discount: z.string().optional(),
@@ -25,16 +26,24 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const orderData = orderSchema.parse(body)
+    let orderId = `local-${Date.now()}`
+    let firestoreSaved = false
 
-    // Save to Firestore
-    const orderRef = await addDoc(collection(db, "orders"), {
-      ...orderData,
-      quantity: Number.parseInt(orderData.quantity),
-      totalPrice: Number.parseInt(orderData.totalPrice),
-      discount: Number.parseInt(orderData.discount || "0"),
-      status: "pending",
-      createdAt: serverTimestamp(),
-    })
+    try {
+      const orderRef = await addDoc(collection(db, "orders"), {
+        ...orderData,
+        quantity: Number.parseInt(orderData.quantity),
+        totalPrice: Number.parseInt(orderData.totalPrice),
+        discount: Number.parseInt(orderData.discount || "0"),
+        status: "pending",
+        createdAt: serverTimestamp(),
+      })
+
+      orderId = orderRef.id
+      firestoreSaved = true
+    } catch (firestoreError) {
+      console.error("Firestore order save error:", firestoreError)
+    }
 
     // Send admin notification email
     const adminEmail = process.env.ADMIN_EMAIL || "allthegoodthings14@gmail.com"
@@ -44,12 +53,14 @@ export async function POST(request: NextRequest) {
       subject: "New SweepBot Pro Order Received",
       html: `
         <h2>New Order Notification</h2>
-        <p><strong>Order ID:</strong> ${orderRef.id}</p>
+        <p><strong>Order ID:</strong> ${orderId}</p>
+        <p><strong>Saved to Firestore:</strong> ${firestoreSaved ? "Yes" : "No"}</p>
         <p><strong>Customer Details:</strong></p>
         <ul>
           <li><strong>Name:</strong> ${orderData.firstName} ${orderData.lastName}</li>
           <li><strong>Phone:</strong> ${orderData.phone}</li>
           <li><strong>WhatsApp:</strong> ${orderData.whatsapp}</li>
+          <li><strong>Email:</strong> ${orderData.email || "Not provided"}</li>
           <li><strong>Address:</strong> ${orderData.address}</li>
         </ul>
         <p><strong>Order Details:</strong></p>
@@ -64,9 +75,15 @@ export async function POST(request: NextRequest) {
 
     if (adminError) {
       console.error("Admin email sending error:", adminError)
+      if (!firestoreSaved) {
+        return NextResponse.json(
+          { error: "Order could not be saved or emailed. Please contact us on WhatsApp." },
+          { status: 500 },
+        )
+      }
     }
 
-    return NextResponse.json({ success: true, orderId: orderRef.id })
+    return NextResponse.json({ success: true, orderId, firestoreSaved, emailSent: !adminError })
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json({ error: "Invalid input", details: error.errors }, { status: 400 })

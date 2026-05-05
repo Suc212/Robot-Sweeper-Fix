@@ -73,15 +73,16 @@ export function OrderForm() {
         body: JSON.stringify(orderData),
       })
 
-      const result = await response.json()
+      const result = await response.json().catch(() => null)
 
-      if (response.ok && result.success) {
+      if (response.ok && result?.success) {
         setIsSubmitted(true)
       } else {
-        setError(result.error || "Something went wrong. Please try again.")
+        setError(result?.error || "Something went wrong. Please try again.")
       }
-    } catch {
-      setError("Something went wrong. Please try again.")
+    } catch (submitError) {
+      console.error("Order submission error:", submitError)
+      setError("Unable to submit your order. Please check your connection and try again.")
     } finally {
       setIsSubmitting(false)
     }
