@@ -8,35 +8,31 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
-import { CheckCircle2, Package, ShieldCheck, Truck, Banknote } from "lucide-react"
+import { CheckCircle2, Package, ShieldCheck, Banknote } from "lucide-react"
 
-const quantityOptions = [
-  {
-    quantity: 1,
-    unitPrice: 800,
-    totalPrice: 800,
-    discount: 0,
-    label: "1 Unit",
-    description: "SweepBot Pro + Charging Dock",
-  },
-  {
-    quantity: 2,
-    unitPrice: 725,
-    totalPrice: 1450,
-    discount: 150,
-    label: "2 Units",
-    description: "Save GH₵150 - Perfect for home & office",
-    popular: true,
-  },
-  {
-    quantity: 3,
-    unitPrice: 667,
-    totalPrice: 2000,
-    discount: 400,
-    label: "3 Units",
-    description: "Save GH₵400 - Best for families & gifts",
-  },
-]
+const UNIT_PRICE = 1500
+const ORIGINAL_UNIT_PRICE = 2300
+
+const quantityOptions = [1, 2, 3].map((quantity) => {
+  const totalPrice = quantity * UNIT_PRICE
+  const originalTotalPrice = quantity * ORIGINAL_UNIT_PRICE
+  const discount = originalTotalPrice - totalPrice
+
+  return {
+    quantity,
+    unitPrice: UNIT_PRICE,
+    originalUnitPrice: ORIGINAL_UNIT_PRICE,
+    totalPrice,
+    originalTotalPrice,
+    discount,
+    label: `${quantity} ${quantity === 1 ? "Unit" : "Units"}`,
+    description:
+      quantity === 1
+        ? "SweepBot Pro + Charging Dock"
+        : `Save GH₵${discount.toLocaleString()} - ${quantity === 2 ? "Perfect for home & office" : "Best for families & gifts"}`,
+    popular: quantity === 2,
+  }
+})
 
 export function OrderForm() {
   const [selectedQuantity, setSelectedQuantity] = useState(2)
@@ -122,14 +118,10 @@ export function OrderForm() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Order Your SweepBot Pro</h2>
-          <p className="mt-3 text-muted-foreground">Free delivery in Accra</p>
+          <p className="mt-3 text-muted-foreground">Payment on delivery in Accra</p>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-muted-foreground">
-          <div className="flex items-center gap-1.5">
-            <Truck className="h-4 w-4 text-primary" />
-            <span>Free Delivery</span>
-          </div>
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="h-4 w-4 text-primary" />
             <span>1 Year Warranty</span>
@@ -143,11 +135,11 @@ export function OrderForm() {
         <div className="mt-8 grid gap-8 lg:grid-cols-5">
           <div className="hidden lg:block lg:col-span-2">
             <div className="sticky top-8 space-y-4">
-              <div className="overflow-hidden rounded-2xl bg-muted/30">
+              <div className="overflow-hidden rounded-2xl bg-white">
                 <img
-                  src="/images/h0fdc229a22de4f6fa615ca1078d2e7aed.avif"
+                  src="/images/D8.avif"
                   alt="SweepBot Pro product view"
-                  className="h-auto w-full object-cover"
+                  className="aspect-square w-full object-contain p-4"
                 />
               </div>
               <div className="rounded-xl bg-primary/5 p-4 text-center">
@@ -191,10 +183,11 @@ export function OrderForm() {
                         <p className="mt-0.5 text-sm text-muted-foreground">{option.description}</p>
                       </div>
                       <div className="text-right shrink-0">
+                        <p className="text-xs text-muted-foreground line-through">
+                          GH₵{option.originalTotalPrice.toLocaleString()}
+                        </p>
                         <p className="text-lg font-bold text-foreground">GH₵{option.totalPrice.toLocaleString()}</p>
-                        {option.discount > 0 && (
-                          <p className="text-xs font-medium text-primary">-GH₵{option.discount}</p>
-                        )}
+                        <p className="text-xs font-medium text-primary">-GH₵{option.discount.toLocaleString()}</p>
                       </div>
                     </label>
                   ))}
@@ -274,20 +267,22 @@ export function OrderForm() {
 
               <div className="rounded-xl bg-muted/50 p-4">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">{selectedOption.quantity} x SweepBot Pro @ GH₵800</span>
+                  <span className="text-muted-foreground">
+                    {selectedOption.quantity} x SweepBot Pro @ GH₵{UNIT_PRICE.toLocaleString()}
+                  </span>
                   <span className="font-medium text-foreground">
-                    GH₵{(selectedOption.quantity * 800).toLocaleString()}
+                    GH₵{selectedOption.totalPrice.toLocaleString()}
                   </span>
                 </div>
-                {selectedOption.discount > 0 && (
-                  <div className="mt-2 flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Bulk Discount</span>
-                    <span className="font-medium text-primary">-GH₵{selectedOption.discount}</span>
-                  </div>
-                )}
                 <div className="mt-2 flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Delivery (Accra)</span>
-                  <span className="font-medium text-primary">Free</span>
+                  <span className="text-muted-foreground">Original Price</span>
+                  <span className="font-medium text-muted-foreground line-through">
+                    GH₵{selectedOption.originalTotalPrice.toLocaleString()}
+                  </span>
+                </div>
+                <div className="mt-2 flex items-center justify-between text-sm">
+                  <span className="text-muted-foreground">Today's Discount</span>
+                  <span className="font-medium text-primary">-GH₵{selectedOption.discount.toLocaleString()}</span>
                 </div>
                 <div className="mt-3 flex items-center justify-between border-t pt-3">
                   <span className="font-semibold text-foreground">Total</span>

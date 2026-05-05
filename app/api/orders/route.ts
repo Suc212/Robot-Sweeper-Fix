@@ -56,7 +56,6 @@ export async function POST(request: NextRequest) {
         <ul>
           <li><strong>Quantity:</strong> ${orderData.quantity} unit(s)</li>
           <li><strong>Total Price:</strong> GH₵${Number.parseInt(orderData.totalPrice).toLocaleString()}</li>
-          <li><strong>Discount:</strong> GH₵${Number.parseInt(orderData.discount || "0").toLocaleString()}</li>
           <li><strong>Payment:</strong> Cash on Delivery</li>
           <li><strong>Order Time:</strong> ${new Date().toLocaleString()}</li>
         </ul>

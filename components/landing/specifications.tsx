@@ -63,9 +63,9 @@ export function Specifications() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <div className="overflow-hidden rounded-2xl bg-card shadow-lg">
             <img
-              src="/images/hfc9e39b99d58450aa2dcafacbaedd297q.avif"
+              src="/images/D5.avif"
               alt="SweepBot Pro internal technology diagram"
-              className="h-auto w-full object-cover"
+              className="aspect-square w-full bg-slate-950 object-contain"
             />
             <div className="p-4 text-center">
               <p className="text-sm font-medium text-foreground">Advanced Internal Technology</p>
@@ -74,9 +74,9 @@ export function Specifications() {
           </div>
           <div className="overflow-hidden rounded-2xl bg-card shadow-lg">
             <img
-              src="/images/h35ee116e8b1e4c08a2bb22d86b630754j.avif"
-              alt="SweepBot Pro component details"
-              className="h-auto w-full object-cover"
+              src="/images/D2.avif"
+              alt="SweepBot Pro black finish product view"
+              className="aspect-square w-full bg-white object-contain p-4"
             />
             <div className="p-4 text-center">
               <p className="text-sm font-medium text-foreground">Premium Build Quality</p>

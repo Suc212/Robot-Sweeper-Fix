@@ -36,9 +36,9 @@ export function ProblemSolution() {
 
         <div className="mt-10 flex justify-center">
           <img
-            src="/images/h35596f002e49401d8e4ce7998d316af1d.avif"
+            src="/images/D6.avif"
             alt="SweepBot Pro cleaning a modern home"
-            className="w-full max-w-xl rounded-2xl shadow-lg object-cover"
+            className="aspect-square w-full max-w-xl rounded-2xl bg-white object-contain shadow-lg"
           />
         </div>
 

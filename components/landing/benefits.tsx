@@ -37,18 +37,18 @@ export function Benefits() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-2xl bg-white">
             <img
-              src="/images/h43396eb5facc4e9ab6975b1e9ec7a08fl.avif"
+              src="/images/D1.jpg"
               alt="SweepBot Pro design aesthetics"
-              className="h-64 w-full object-cover transition-transform hover:scale-105"
+              className="aspect-[4/3] w-full object-contain p-4 transition-transform hover:scale-105"
             />
           </div>
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-2xl bg-slate-950">
             <img
-              src="/images/h38fd4a416d0445cba7196aa4b01eff9er.avif"
+              src="/images/D4.avif"
               alt="SweepBot Pro advanced features"
-              className="h-64 w-full object-cover transition-transform hover:scale-105"
+              className="aspect-[4/3] w-full object-contain transition-transform hover:scale-105"
             />
           </div>
         </div>

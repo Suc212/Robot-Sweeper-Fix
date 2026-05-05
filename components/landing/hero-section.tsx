@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Shield, Truck, RotateCcw } from "lucide-react"
+import { Shield, RotateCcw } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -25,22 +25,25 @@ export function HeroSection() {
               <div className="rounded-xl border bg-card p-4 sm:p-6 shadow-sm">
                 <div className="flex items-baseline gap-4 sm:gap-6">
                   <div>
-                    <p className="text-xl sm:text-2xl font-bold text-foreground">GH₵800</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground line-through">GH₵2,300</p>
+                    <p className="text-xl sm:text-2xl font-bold text-foreground">GH₵1,500</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">1 Unit</p>
                   </div>
                   <div>
-                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵1,450</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground line-through">GH₵4,600</p>
+                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵3,000</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">2 Units</p>
-                    <p className="text-xs font-medium text-primary">Save GH₵150</p>
+                    <p className="text-xs font-medium text-primary">Save GH₵1,600</p>
                   </div>
                   <div>
-                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵2,000</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground line-through">GH₵6,900</p>
+                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵4,500</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">3 Units</p>
-                    <p className="text-xs font-medium text-primary">Save GH₵400</p>
+                    <p className="text-xs font-medium text-primary">Save GH₵2,400</p>
                   </div>
                 </div>
                 <Button className="mt-4 w-full h-12 text-base font-semibold" size="lg" asChild>
-                  <a href="#order">Order Now - Free Delivery</a>
+                  <a href="#order">Order Now</a>
                 </Button>
               </div>
             </div>
@@ -49,10 +52,6 @@ export function HeroSection() {
               <div className="flex items-center gap-2">
                 <RotateCcw className="h-4 w-4" />
                 <span>7-Day Returns</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Truck className="h-4 w-4" />
-                <span>Free Delivery</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4" />
@@ -64,9 +63,9 @@ export function HeroSection() {
           <div className="relative order-first lg:order-last">
             <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-primary/10 to-primary/5" />
             <img
-              src="/images/h9f2ccb43f37e4943b198abfb48d7d2d7r.avif"
+              src="/images/D3.avif"
               alt="SweepBot Pro Robot Sweeper"
-              className="mx-auto h-auto w-full max-w-sm sm:max-w-md rounded-2xl object-cover"
+              className="mx-auto aspect-square w-full max-w-sm rounded-2xl bg-white object-contain sm:max-w-md"
             />
           </div>
         </div>

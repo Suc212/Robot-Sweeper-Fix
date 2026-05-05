@@ -1464,7 +1464,7 @@ function Footer() {
                         children: [
                             "© ",
                             new Date().getFullYear(),
-                            " SweepBot Technologies. All rights reserved."
+                            " Korret Stores. All rights reserved."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/landing/footer.tsx",
