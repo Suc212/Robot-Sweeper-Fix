@@ -4,10 +4,14 @@ import { z } from "zod"
 import { db } from "@/lib/firebase"
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"
 
+export const runtime = "nodejs"
+export const maxDuration = 10
+
 const resendApiKey = process.env.RESEND_API_KEY
 if (!resendApiKey) {
   console.error("RESEND_API_KEY is not set in environment variables.")
 }
+
 const resend = new Resend(resendApiKey)
 
 const orderSchema = z.object({
@@ -22,22 +26,88 @@ const orderSchema = z.object({
   discount: z.string().optional(),
 })
 
+const withTimeout = async <T,>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> => {
+  let timeout: ReturnType<typeof setTimeout> | undefined
+
+  try {
+    return await Promise.race([
+      promise,
+      new Promise<never>((_, reject) => {
+        timeout = setTimeout(() => reject(new Error(`${label} timed out after ${timeoutMs}ms`)), timeoutMs)
+      }),
+    ])
+  } finally {
+    if (timeout) {
+      clearTimeout(timeout)
+    }
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const orderData = orderSchema.parse(body)
+    const adminEmail = process.env.ADMIN_EMAIL || "allthegoodthings14@gmail.com"
+
     let orderId = `local-${Date.now()}`
+    let emailSent = false
     let firestoreSaved = false
 
+    const emailHtml = `
+      <h2>New Order Notification</h2>
+      <p><strong>Order ID:</strong> ${orderId}</p>
+      <p><strong>Customer Details:</strong></p>
+      <ul>
+        <li><strong>Name:</strong> ${orderData.firstName} ${orderData.lastName}</li>
+        <li><strong>Phone:</strong> ${orderData.phone}</li>
+        <li><strong>WhatsApp:</strong> ${orderData.whatsapp}</li>
+        <li><strong>Email:</strong> ${orderData.email || "Not provided"}</li>
+        <li><strong>Address:</strong> ${orderData.address}</li>
+      </ul>
+      <p><strong>Order Details:</strong></p>
+      <ul>
+        <li><strong>Quantity:</strong> ${orderData.quantity} unit(s)</li>
+        <li><strong>Total Price:</strong> GH₵${Number.parseInt(orderData.totalPrice).toLocaleString()}</li>
+        <li><strong>Payment:</strong> Cash on Delivery</li>
+        <li><strong>Order Time:</strong> ${new Date().toLocaleString()}</li>
+      </ul>
+    `
+
     try {
-      const orderRef = await addDoc(collection(db, "orders"), {
-        ...orderData,
-        quantity: Number.parseInt(orderData.quantity),
-        totalPrice: Number.parseInt(orderData.totalPrice),
-        discount: Number.parseInt(orderData.discount || "0"),
-        status: "pending",
-        createdAt: serverTimestamp(),
-      })
+      const { error } = await withTimeout(
+        resend.emails.send({
+          from: "onboarding@resend.dev",
+          to: [adminEmail],
+          subject: "New SweepBot Pro Order Received",
+          html: emailHtml,
+        }),
+        5000,
+        "Order email",
+      )
+
+      if (error) {
+        throw error
+      }
+
+      emailSent = true
+    } catch (emailError) {
+      console.error("Admin email sending error:", emailError)
+    }
+
+    try {
+      const orderRef = await withTimeout(
+        addDoc(collection(db, "orders"), {
+          ...orderData,
+          quantity: Number.parseInt(orderData.quantity),
+          totalPrice: Number.parseInt(orderData.totalPrice),
+          discount: Number.parseInt(orderData.discount || "0"),
+          emailSent,
+          status: "pending",
+          createdAt: serverTimestamp(),
+        }),
+        3000,
+        "Firestore order save",
+      )
 
       orderId = orderRef.id
       firestoreSaved = true
@@ -45,45 +115,14 @@ export async function POST(request: NextRequest) {
       console.error("Firestore order save error:", firestoreError)
     }
 
-    // Send admin notification email
-    const adminEmail = process.env.ADMIN_EMAIL || "allthegoodthings14@gmail.com"
-    const { error: adminError } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: [adminEmail],
-      subject: "New SweepBot Pro Order Received",
-      html: `
-        <h2>New Order Notification</h2>
-        <p><strong>Order ID:</strong> ${orderId}</p>
-        <p><strong>Saved to Firestore:</strong> ${firestoreSaved ? "Yes" : "No"}</p>
-        <p><strong>Customer Details:</strong></p>
-        <ul>
-          <li><strong>Name:</strong> ${orderData.firstName} ${orderData.lastName}</li>
-          <li><strong>Phone:</strong> ${orderData.phone}</li>
-          <li><strong>WhatsApp:</strong> ${orderData.whatsapp}</li>
-          <li><strong>Email:</strong> ${orderData.email || "Not provided"}</li>
-          <li><strong>Address:</strong> ${orderData.address}</li>
-        </ul>
-        <p><strong>Order Details:</strong></p>
-        <ul>
-          <li><strong>Quantity:</strong> ${orderData.quantity} unit(s)</li>
-          <li><strong>Total Price:</strong> GH₵${Number.parseInt(orderData.totalPrice).toLocaleString()}</li>
-          <li><strong>Payment:</strong> Cash on Delivery</li>
-          <li><strong>Order Time:</strong> ${new Date().toLocaleString()}</li>
-        </ul>
-      `,
-    })
-
-    if (adminError) {
-      console.error("Admin email sending error:", adminError)
-      if (!firestoreSaved) {
-        return NextResponse.json(
-          { error: "Order could not be saved or emailed. Please contact us on WhatsApp." },
-          { status: 500 },
-        )
-      }
+    if (!emailSent && !firestoreSaved) {
+      return NextResponse.json(
+        { error: "Order could not be submitted. Please contact us on WhatsApp." },
+        { status: 500 },
+      )
     }
 
-    return NextResponse.json({ success: true, orderId, firestoreSaved, emailSent: !adminError })
+    return NextResponse.json({ success: true, orderId, emailSent, firestoreSaved })
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json({ error: "Invalid input", details: error.errors }, { status: 400 })
