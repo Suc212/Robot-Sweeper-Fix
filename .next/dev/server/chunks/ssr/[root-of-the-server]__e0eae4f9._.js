@@ -243,7 +243,7 @@ function HeroSection() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-xl sm:text-2xl font-bold text-primary",
-                                                            children: "GH₵3,000"
+                                                            children: "GH₵2,700"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/landing/hero-section.tsx",
                                                             lineNumber: 34,
@@ -259,7 +259,7 @@ function HeroSection() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-xs font-medium text-primary",
-                                                            children: "Save GH₵1,600"
+                                                            children: "Save GH₵1,900"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/landing/hero-section.tsx",
                                                             lineNumber: 36,
@@ -283,7 +283,7 @@ function HeroSection() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-xl sm:text-2xl font-bold text-primary",
-                                                            children: "GH₵4,500"
+                                                            children: "GH₵3,800"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/landing/hero-section.tsx",
                                                             lineNumber: 40,
@@ -299,7 +299,7 @@ function HeroSection() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-xs font-medium text-primary",
-                                                            children: "Save GH₵2,400"
+                                                            children: "Save GH₵3,100"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/landing/hero-section.tsx",
                                                             lineNumber: 42,

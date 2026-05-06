@@ -31,15 +31,15 @@ export function HeroSection() {
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm text-muted-foreground line-through">GH₵4,600</p>
-                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵3,000</p>
+                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵2,700</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">2 Units</p>
-                    <p className="text-xs font-medium text-primary">Save GH₵1,600</p>
+                    <p className="text-xs font-medium text-primary">Save GH₵1,900</p>
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm text-muted-foreground line-through">GH₵6,900</p>
-                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵4,500</p>
+                    <p className="text-xl sm:text-2xl font-bold text-primary">GH₵3,800</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">3 Units</p>
-                    <p className="text-xs font-medium text-primary">Save GH₵2,400</p>
+                    <p className="text-xs font-medium text-primary">Save GH₵3,100</p>
                   </div>
                 </div>
                 <Button className="mt-4 w-full h-12 text-base font-semibold" size="lg" asChild>

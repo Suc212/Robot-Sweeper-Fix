@@ -12,10 +12,15 @@ import { CheckCircle2, Package, ShieldCheck, Banknote } from "lucide-react"
 
 const UNIT_PRICE = 1500
 const ORIGINAL_UNIT_PRICE = 2300
+const bundlePrices: Record<number, number> = {
+  1: 1500,
+  2: 2700,
+  3: 3800,
+}
 
 const quantityOptions = [1, 2, 3].map((quantity) => {
-  const totalPrice = quantity * UNIT_PRICE
   const originalTotalPrice = quantity * ORIGINAL_UNIT_PRICE
+  const totalPrice = bundlePrices[quantity]
   const discount = originalTotalPrice - totalPrice
 
   return {
@@ -29,7 +34,9 @@ const quantityOptions = [1, 2, 3].map((quantity) => {
     description:
       quantity === 1
         ? "SweepBot Pro + Charging Dock"
-        : `Save GH₵${discount.toLocaleString()} - ${quantity === 2 ? "Perfect for home & office" : "Best for families & gifts"}`,
+        : `Bundle deal: Save GH₵${discount.toLocaleString()} - ${
+            quantity === 2 ? "Perfect for home & office" : "Best for families & gifts"
+          }`,
     popular: quantity === 2,
   }
 })
@@ -188,7 +195,9 @@ export function OrderForm() {
                           GH₵{option.originalTotalPrice.toLocaleString()}
                         </p>
                         <p className="text-lg font-bold text-foreground">GH₵{option.totalPrice.toLocaleString()}</p>
-                        <p className="text-xs font-medium text-primary">-GH₵{option.discount.toLocaleString()}</p>
+                        {option.discount > 0 && (
+                          <p className="text-xs font-medium text-primary">-GH₵{option.discount.toLocaleString()}</p>
+                        )}
                       </div>
                     </label>
                   ))}
@@ -272,7 +281,7 @@ export function OrderForm() {
                     {selectedOption.quantity} x SweepBot Pro @ GH₵{UNIT_PRICE.toLocaleString()}
                   </span>
                   <span className="font-medium text-foreground">
-                    GH₵{selectedOption.totalPrice.toLocaleString()}
+                    GH₵{(selectedOption.quantity * UNIT_PRICE).toLocaleString()}
                   </span>
                 </div>
                 <div className="mt-2 flex items-center justify-between text-sm">
@@ -281,10 +290,12 @@ export function OrderForm() {
                     GH₵{selectedOption.originalTotalPrice.toLocaleString()}
                   </span>
                 </div>
-                <div className="mt-2 flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Today's Discount</span>
-                  <span className="font-medium text-primary">-GH₵{selectedOption.discount.toLocaleString()}</span>
-                </div>
+                {selectedOption.discount > 0 && (
+                  <div className="mt-2 flex items-center justify-between text-sm">
+                    <span className="text-muted-foreground">Bundle Discount</span>
+                    <span className="font-medium text-primary">-GH₵{selectedOption.discount.toLocaleString()}</span>
+                  </div>
+                )}
                 <div className="mt-3 flex items-center justify-between border-t pt-3">
                   <span className="font-semibold text-foreground">Total</span>
                   <span className="text-xl font-bold text-foreground">
