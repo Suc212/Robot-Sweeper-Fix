@@ -52,23 +52,19 @@ export async function POST(request: NextRequest) {
     let orderId = `local-${Date.now()}`
     let emailSent = false
     let firestoreSaved = false
+    const quantity = Number.parseInt(orderData.quantity)
+    const totalPrice = Number.parseInt(orderData.totalPrice)
+    const unitLabel = quantity === 1 ? "unit" : "units"
 
     const emailHtml = `
       <h2>New Order Notification</h2>
-      <p><strong>Order ID:</strong> ${orderId}</p>
-      <p><strong>Customer Details:</strong></p>
       <ul>
         <li><strong>Name:</strong> ${orderData.firstName} ${orderData.lastName}</li>
         <li><strong>Phone:</strong> ${orderData.phone}</li>
         <li><strong>WhatsApp:</strong> ${orderData.whatsapp}</li>
         <li><strong>Email:</strong> ${orderData.email || "Not provided"}</li>
         <li><strong>Address:</strong> ${orderData.address}</li>
-      </ul>
-      <p><strong>Order Details:</strong></p>
-      <ul>
-        <li><strong>Quantity:</strong> ${orderData.quantity} unit(s)</li>
-        <li><strong>Total Price:</strong> GH₵${Number.parseInt(orderData.totalPrice).toLocaleString()}</li>
-        <li><strong>Payment:</strong> Cash on Delivery</li>
+        <li><strong>Order:</strong> ${quantity} ${unitLabel} for GH₵${totalPrice.toLocaleString()}</li>
         <li><strong>Order Time:</strong> ${new Date().toLocaleString()}</li>
       </ul>
     `
