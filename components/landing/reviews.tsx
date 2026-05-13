@@ -1,5 +1,7 @@
 import { Star } from "lucide-react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 const reviews = [
   {
     id: 1,
@@ -63,8 +65,16 @@ export function Reviews() {
           </div>
           <p className="mt-2 text-lg font-semibold text-foreground">4.9/5 from 500+ happy customers</p>
           <h2 className="mt-4 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-            What Ghanaians Are Saying
+            What Other Ghanaians Are Saying
           </h2>
+        </div>
+
+        <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl bg-card shadow-lg">
+          <img
+            src="/images/Image 3.png"
+            alt="Customer testimonial from Jessica Williams holding a smart sweeper"
+            className="w-full object-contain"
+          />
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -86,6 +96,8 @@ export function Reviews() {
             </div>
           ))}
         </div>
+
+        <OrderCta className="mt-10" />
       </div>
     </section>
   )

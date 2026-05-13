@@ -1,5 +1,7 @@
 import { Battery, Ruler, Volume2, Wifi, Navigation, Timer, Wind, HardDrive } from "lucide-react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 const specs = [
   {
     icon: Battery,
@@ -98,6 +100,8 @@ export function Specifications() {
             </div>
           ))}
         </div>
+
+        <OrderCta className="mt-12" />
       </div>
     </section>
   )

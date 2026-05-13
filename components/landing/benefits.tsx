@@ -1,5 +1,7 @@
 import { Smartphone, Map, Clock, Leaf } from "lucide-react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 const benefits = [
   //{
     //icon: Smartphone,
@@ -64,6 +66,8 @@ export function Benefits() {
             </div>
           ))}
         </div>
+
+        <OrderCta className="mt-12" />
       </div>
     </section>
   )

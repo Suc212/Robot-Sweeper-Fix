@@ -1,5 +1,7 @@
 import { AlertCircle, Sparkles } from "lucide-react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 const problems = [
   "Manual sweeping wastes hours every week",
   "Traditional vacuums miss corners and edges",
@@ -76,6 +78,7 @@ export function ProblemSolution() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">Stop wasting time on floors. Let SweepBot handle it.</p>
+          <OrderCta className="mt-6" />
         </div>
       </div>
     </section>

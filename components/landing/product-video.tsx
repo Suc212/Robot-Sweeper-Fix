@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 export function ProductVideo() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const previewTime = 0.1
@@ -43,23 +45,26 @@ export function ProductVideo() {
           </p>
         </div>
 
-        <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl border bg-card shadow-lg">
-          <video
-            ref={videoRef}
-            className="aspect-[9/16] w-full bg-muted object-contain"
-            controls
-            muted
-            playsInline
-            preload="auto"
-            onLoadedMetadata={(event) => {
-              if (event.currentTarget.currentTime === 0) {
-                event.currentTarget.currentTime = previewTime
-              }
-            }}
-          >
-            <source src={`/product-demo.mp4#t=${previewTime}`} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="mx-auto w-full max-w-sm">
+          <div className="overflow-hidden rounded-2xl border bg-card shadow-lg">
+            <video
+              ref={videoRef}
+              className="aspect-[9/16] w-full bg-muted object-contain"
+              controls
+              muted
+              playsInline
+              preload="auto"
+              onLoadedMetadata={(event) => {
+                if (event.currentTarget.currentTime === 0) {
+                  event.currentTarget.currentTime = previewTime
+                }
+              }}
+            >
+              <source src={`/product-demo.mp4#t=${previewTime}`} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <OrderCta className="mt-6" />
         </div>
       </div>
     </section>

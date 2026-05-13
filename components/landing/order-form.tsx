@@ -125,7 +125,9 @@ export function OrderForm() {
     <section id="order" className="py-12 sm:py-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Order Your SweepBot Pro</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            Fill this form to place your order
+          </h2>
           <p className="mt-3 text-muted-foreground">Free delivery in Ghana</p>
           <div className="mx-auto mt-4 flex max-w-xl flex-col gap-2 text-sm sm:flex-row sm:justify-center">
             <span className="rounded-full bg-primary/10 px-3 py-1.5 font-semibold text-primary">

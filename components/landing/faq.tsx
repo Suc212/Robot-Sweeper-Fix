@@ -1,3 +1,5 @@
+import { OrderCta } from "@/components/landing/order-cta"
+
 const faqs = [
   {
     question: "Does SweepBot Pro work on tiled floors?",
@@ -39,6 +41,8 @@ export function FAQ() {
             </div>
           ))}
         </div>
+
+        <OrderCta className="mt-10" label="Place Your Order" />
       </div>
     </section>
   )

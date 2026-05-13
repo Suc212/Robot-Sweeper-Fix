@@ -763,6 +763,55 @@ function OrderProcess() {
     }, this);
 }
 }),
+"[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "OrderCta",
+    ()=>OrderCta
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shopping-cart.js [app-rsc] (ecmascript) <export default as ShoppingCart>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+function OrderCta({ className = "", label = "Order Now" }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `flex justify-center ${className}`,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+            asChild: true,
+            size: "lg",
+            className: "h-12 px-8 text-base font-semibold",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "#order",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__["ShoppingCart"], {
+                        className: "mr-2 h-5 w-5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/landing/order-cta.tsx",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, this),
+                    label
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/landing/order-cta.tsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/landing/order-cta.tsx",
+            lineNumber: 13,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/landing/order-cta.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+}),
 "[project]/components/landing/problem-solution.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -773,6 +822,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-rsc] (ecmascript) <export default as AlertCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-rsc] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 const problems = [
@@ -805,14 +856,14 @@ function ProblemSolution() {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 27,
                                     columnNumber: 13
                                 }, this),
                                 "The Cleaning Problem"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/problem-solution.tsx",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -820,7 +871,7 @@ function ProblemSolution() {
                             children: "Traditional cleaning is broken."
                         }, void 0, false, {
                             fileName: "[project]/components/landing/problem-solution.tsx",
-                            lineNumber: 28,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -828,13 +879,13 @@ function ProblemSolution() {
                             children: "Hours spent pushing heavy vacuums, missed spots, and floors that never stay clean. There has to be a better way."
                         }, void 0, false, {
                             fileName: "[project]/components/landing/problem-solution.tsx",
-                            lineNumber: 31,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/problem-solution.tsx",
-                    lineNumber: 23,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -845,12 +896,12 @@ function ProblemSolution() {
                         className: "aspect-square w-full max-w-xl rounded-2xl bg-white object-contain shadow-lg"
                     }, void 0, false, {
                         fileName: "[project]/components/landing/problem-solution.tsx",
-                        lineNumber: 38,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/landing/problem-solution.tsx",
-                    lineNumber: 37,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -866,14 +917,14 @@ function ProblemSolution() {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/problem-solution.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, this),
                                         "The Old Way"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -885,31 +936,31 @@ function ProblemSolution() {
                                                     className: "mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-destructive"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                                    lineNumber: 54,
+                                                    lineNumber: 56,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: problem
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                                    lineNumber: 55,
+                                                    lineNumber: 57,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, problem, true, {
                                             fileName: "[project]/components/landing/problem-solution.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 55,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/problem-solution.tsx",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -922,14 +973,14 @@ function ProblemSolution() {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/problem-solution.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this),
                                         "The SweepBot Way"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 64,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -941,63 +992,72 @@ function ProblemSolution() {
                                                     className: "mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 71,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: solution
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 72,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, solution, true, {
                                             fileName: "[project]/components/landing/problem-solution.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/problem-solution.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/problem-solution.tsx",
-                            lineNumber: 61,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/problem-solution.tsx",
-                    lineNumber: 45,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-12 text-center",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-muted-foreground",
-                        children: "Stop wasting time on floors. Let SweepBot handle it."
-                    }, void 0, false, {
-                        fileName: "[project]/components/landing/problem-solution.tsx",
-                        lineNumber: 78,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-muted-foreground",
+                            children: "Stop wasting time on floors. Let SweepBot handle it."
+                        }, void 0, false, {
+                            fileName: "[project]/components/landing/problem-solution.tsx",
+                            lineNumber: 80,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                            className: "mt-6"
+                        }, void 0, false, {
+                            fileName: "[project]/components/landing/problem-solution.tsx",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/components/landing/problem-solution.tsx",
-                    lineNumber: 77,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/problem-solution.tsx",
-            lineNumber: 22,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/problem-solution.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -1018,6 +1078,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/timer.js [app-rsc] (ecmascript) <export default as Timer>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wind$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Wind$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wind.js [app-rsc] (ecmascript) <export default as Wind>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hard$2d$drive$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__HardDrive$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/hard-drive.js [app-rsc] (ecmascript) <export default as HardDrive>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 const specs = [
@@ -1084,7 +1146,7 @@ function Specifications() {
                             children: "Specifications"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/specifications.tsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1092,13 +1154,13 @@ function Specifications() {
                             children: "Built with premium components for lasting performance"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/specifications.tsx",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/specifications.tsx",
-                    lineNumber: 58,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1113,7 +1175,7 @@ function Specifications() {
                                     className: "aspect-square w-full bg-slate-950 object-contain"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1124,7 +1186,7 @@ function Specifications() {
                                             children: "Advanced Internal Technology"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/specifications.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1132,19 +1194,19 @@ function Specifications() {
                                             children: "Precision-engineered for superior cleaning"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/specifications.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/specifications.tsx",
-                            lineNumber: 64,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1156,7 +1218,7 @@ function Specifications() {
                                     className: "aspect-square w-full bg-white object-contain p-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1167,7 +1229,7 @@ function Specifications() {
                                             children: "Premium Build Quality"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/specifications.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1175,25 +1237,25 @@ function Specifications() {
                                             children: "Durable materials for long-lasting performance"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/specifications.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/specifications.tsx",
-                            lineNumber: 75,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/specifications.tsx",
-                    lineNumber: 63,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1205,7 +1267,7 @@ function Specifications() {
                                     className: "mx-auto h-8 w-8 text-primary"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 96,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1213,7 +1275,7 @@ function Specifications() {
                                     children: spec.value
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 97,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1221,7 +1283,7 @@ function Specifications() {
                                     children: spec.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 98,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1229,29 +1291,36 @@ function Specifications() {
                                     children: spec.description
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/specifications.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 99,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, spec.label, true, {
                             fileName: "[project]/components/landing/specifications.tsx",
-                            lineNumber: 90,
+                            lineNumber: 92,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/landing/specifications.tsx",
-                    lineNumber: 88,
+                    lineNumber: 90,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                    className: "mt-12"
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/specifications.tsx",
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/specifications.tsx",
-            lineNumber: 57,
+            lineNumber: 59,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/specifications.tsx",
-        lineNumber: 56,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -1267,6 +1336,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Map$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map.js [app-rsc] (ecmascript) <export default as Map>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-rsc] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$leaf$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Leaf$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/leaf.js [app-rsc] (ecmascript) <export default as Leaf>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 const benefits = [
@@ -1306,7 +1377,7 @@ function Benefits() {
                             children: "Why Choose SweepBot Pro"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/benefits.tsx",
-                            lineNumber: 35,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1314,13 +1385,13 @@ function Benefits() {
                             children: "Intelligent features designed for modern living"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/benefits.tsx",
-                            lineNumber: 36,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/benefits.tsx",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1334,12 +1405,12 @@ function Benefits() {
                                 className: "aspect-[4/3] w-full object-contain p-4 transition-transform hover:scale-105"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/benefits.tsx",
-                                lineNumber: 41,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/landing/benefits.tsx",
-                            lineNumber: 40,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1350,18 +1421,18 @@ function Benefits() {
                                 className: "aspect-[4/3] w-full object-contain transition-transform hover:scale-105"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/benefits.tsx",
-                                lineNumber: 48,
+                                lineNumber: 50,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/landing/benefits.tsx",
-                            lineNumber: 47,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/benefits.tsx",
-                    lineNumber: 39,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1375,12 +1446,12 @@ function Benefits() {
                                         className: "h-7 w-7 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/benefits.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 62,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/benefits.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 61,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1388,7 +1459,7 @@ function Benefits() {
                                     children: benefit.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/benefits.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 64,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1396,29 +1467,36 @@ function Benefits() {
                                     children: benefit.description
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/benefits.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 65,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, benefit.title, true, {
                             fileName: "[project]/components/landing/benefits.tsx",
-                            lineNumber: 58,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/landing/benefits.tsx",
-                    lineNumber: 56,
+                    lineNumber: 58,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                    className: "mt-12"
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/benefits.tsx",
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/benefits.tsx",
-            lineNumber: 33,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/benefits.tsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -1468,6 +1546,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-rsc] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 const reviews = [
@@ -1537,12 +1617,12 @@ function Reviews() {
                                     className: "h-6 w-6 fill-yellow-400 text-yellow-400"
                                 }, i, false, {
                                     fileName: "[project]/components/landing/reviews.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/landing/reviews.tsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1550,7 +1630,7 @@ function Reviews() {
                             children: "4.9/5 from 500+ happy customers"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/reviews.tsx",
-                            lineNumber: 64,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1558,13 +1638,29 @@ function Reviews() {
                             children: "What Other Ghanaians Are Saying"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/reviews.tsx",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/reviews.tsx",
-                    lineNumber: 58,
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mx-auto mt-10 max-w-2xl overflow-hidden rounded-2xl bg-card shadow-lg",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        src: "/images/Image 3.png",
+                        alt: "Customer testimonial from Jessica Williams holding a smart sweeper",
+                        className: "w-full object-contain"
+                    }, void 0, false, {
+                        fileName: "[project]/components/landing/reviews.tsx",
+                        lineNumber: 73,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/reviews.tsx",
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1580,12 +1676,12 @@ function Reviews() {
                                             className: "h-4 w-4 fill-yellow-400 text-yellow-400"
                                         }, i, false, {
                                             fileName: "[project]/components/landing/reviews.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 85,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/reviews.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1593,7 +1689,7 @@ function Reviews() {
                                     children: review.text
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/reviews.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1606,7 +1702,7 @@ function Reviews() {
                                                     children: review.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/reviews.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 91,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1614,13 +1710,13 @@ function Reviews() {
                                                     children: review.location
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/reviews.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 92,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/landing/reviews.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1628,35 +1724,42 @@ function Reviews() {
                                             children: review.date
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/reviews.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 94,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/reviews.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, review.id, true, {
                             fileName: "[project]/components/landing/reviews.tsx",
-                            lineNumber: 72,
+                            lineNumber: 82,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/landing/reviews.tsx",
-                    lineNumber: 70,
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                    className: "mt-10"
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/reviews.tsx",
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/reviews.tsx",
-            lineNumber: 57,
+            lineNumber: 59,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/reviews.tsx",
-        lineNumber: 56,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -1672,6 +1775,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$banknote$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Banknote$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/banknote.js [app-rsc] (ecmascript) <export default as Banknote>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-rsc] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/truck.js [app-rsc] (ecmascript) <export default as Truck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 function DeliveryPayment() {
@@ -1689,12 +1794,12 @@ function DeliveryPayment() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/delivery-payment.tsx",
-                                lineNumber: 9,
+                                lineNumber: 11,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                            lineNumber: 8,
+                            lineNumber: 10,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1702,7 +1807,7 @@ function DeliveryPayment() {
                             children: "Free Delivery in Ghana 🇬🇭"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1710,13 +1815,13 @@ function DeliveryPayment() {
                             children: "We offer free delivery across Ghana. Payment on delivery is available only in Accra after your order has been confirmed."
                         }, void 0, false, {
                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                            lineNumber: 14,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                    lineNumber: 7,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1734,12 +1839,12 @@ function DeliveryPayment() {
                                                 className: "h-5 w-5 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/delivery-payment.tsx",
-                                                lineNumber: 24,
+                                                lineNumber: 26,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 25,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1747,13 +1852,13 @@ function DeliveryPayment() {
                                             children: "Accra Orders"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 28,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 24,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1761,13 +1866,13 @@ function DeliveryPayment() {
                                     children: "Customers in Accra can pay when the SweepBot Pro is delivered. We will contact you first to confirm your details before dispatch."
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 30,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                            lineNumber: 21,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1782,12 +1887,12 @@ function DeliveryPayment() {
                                                 className: "h-5 w-5 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/delivery-payment.tsx",
-                                                lineNumber: 37,
+                                                lineNumber: 39,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                                            lineNumber: 36,
+                                            lineNumber: 38,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1795,13 +1900,13 @@ function DeliveryPayment() {
                                             children: "Outside Accra"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 41,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1809,30 +1914,37 @@ function DeliveryPayment() {
                                     children: "Orders outside Accra require advance payment before shipment. This helps us confirm dispatch and provide reliable delivery to your location."
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/landing/delivery-payment.tsx",
-                            lineNumber: 34,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/delivery-payment.tsx",
-                    lineNumber: 20,
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                    className: "mt-10"
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/delivery-payment.tsx",
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/delivery-payment.tsx",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/delivery-payment.tsx",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -1845,6 +1957,8 @@ __turbopack_context__.s([
     ()=>FAQ
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/landing/order-cta.tsx [app-rsc] (ecmascript)");
+;
 ;
 const faqs = [
     {
@@ -1882,7 +1996,7 @@ function FAQ() {
                             children: "Questions Before You Order"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/faq.tsx",
-                            lineNumber: 30,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1890,13 +2004,13 @@ function FAQ() {
                             children: "Clear answers for common buyer concerns"
                         }, void 0, false, {
                             fileName: "[project]/components/landing/faq.tsx",
-                            lineNumber: 31,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/landing/faq.tsx",
-                    lineNumber: 29,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1909,7 +2023,7 @@ function FAQ() {
                                     children: faq.question
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/faq.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 39,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1917,29 +2031,37 @@ function FAQ() {
                                     children: faq.answer
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/faq.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 40,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, faq.question, true, {
                             fileName: "[project]/components/landing/faq.tsx",
-                            lineNumber: 36,
+                            lineNumber: 38,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/landing/faq.tsx",
-                    lineNumber: 34,
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$landing$2f$order$2d$cta$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["OrderCta"], {
+                    className: "mt-10",
+                    label: "Place Your Order"
+                }, void 0, false, {
+                    fileName: "[project]/components/landing/faq.tsx",
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/landing/faq.tsx",
-            lineNumber: 28,
+            lineNumber: 30,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/landing/faq.tsx",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
@@ -2213,4 +2335,4 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/page.tsx [app-rsc
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__d34b5790._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__ed71b0e3._.js.map

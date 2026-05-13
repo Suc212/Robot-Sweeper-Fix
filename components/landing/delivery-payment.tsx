@@ -1,5 +1,7 @@
 import { Banknote, MapPin, Truck } from "lucide-react"
 
+import { OrderCta } from "@/components/landing/order-cta"
+
 export function DeliveryPayment() {
   return (
     <section className="border-y bg-muted/30 py-16 sm:py-20">
@@ -44,6 +46,8 @@ export function DeliveryPayment() {
             </p>
           </div>
         </div>
+
+        <OrderCta className="mt-10" />
       </div>
     </section>
   )
