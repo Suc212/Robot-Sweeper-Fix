@@ -88,7 +88,7 @@ export function HeroSection() {
           <div className="relative order-first lg:order-last">
             <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-primary/10 to-primary/5" />
             <img
-              src="/images/SmartSweeper Img 1.png"
+              src="/images/Image 2.png"
               alt="Customer review showing SweepBot Pro cleaning a floor"
               className="mx-auto w-full max-w-sm rounded-2xl bg-white object-contain shadow-lg sm:max-w-md"
             />
