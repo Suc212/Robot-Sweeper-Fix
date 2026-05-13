@@ -126,17 +126,25 @@ export function OrderForm() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Order Your SweepBot Pro</h2>
-          <p className="mt-3 text-muted-foreground">Payment on delivery in Accra</p>
+          <p className="mt-3 text-muted-foreground">Free delivery in Ghana</p>
+          <div className="mx-auto mt-4 flex max-w-xl flex-col gap-2 text-sm sm:flex-row sm:justify-center">
+            <span className="rounded-full bg-primary/10 px-3 py-1.5 font-semibold text-primary">
+              Limited stock available for delivery
+            </span>
+            <span className="rounded-full bg-secondary px-3 py-1.5 font-medium text-secondary-foreground">
+              Bundle deal active today
+            </span>
+          </div>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-muted-foreground">
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="h-4 w-4 text-primary" />
-            <span>1 Year Warranty</span>
+            <span>Warranty</span>
           </div>
           <div className="flex items-center gap-1.5 font-semibold text-primary">
             <Banknote className="h-4 w-4" />
-            <span>Payment on Delivery</span>
+            <span>Accra Payment on Delivery</span>
           </div>
         </div>
 

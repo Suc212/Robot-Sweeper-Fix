@@ -1,30 +1,63 @@
-import { Badge } from "@/components/ui/badge"
+"use client"
+
+import { useEffect, useRef } from "react"
 
 export function ProductVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const previewTime = 0.1
+
+  useEffect(() => {
+    const video = videoRef.current
+
+    if (!video) {
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          video.pause()
+          return
+        }
+
+        video.muted = true
+        void video.play().catch(() => {})
+      },
+      { threshold: 0.45 },
+    )
+
+    observer.observe(video)
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section className="border-y bg-muted/30 py-16 sm:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div>
-          <Badge variant="secondary" className="px-3 py-1 text-xs font-medium sm:text-sm">
-            See It In Action
-          </Badge>
-          <h2 className="mt-6 text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-            Watch SweepBot Pro clean around real furniture.
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            See How It Works
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            See how it works to keep your home clean and tidy, even in hard-to-reach  areas. Watch the video to see SweepBot Pro in action, navigating around furniture and obstacles with ease.
+            Watch the video to see SweepBot in action, navigating around furniture and obstacles.
           </p>
         </div>
 
         <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl border bg-card shadow-lg">
           <video
+            ref={videoRef}
             className="aspect-[9/16] w-full bg-muted object-contain"
             controls
+            muted
             playsInline
-            preload="metadata"
-            poster="/images/D6.avif"
+            preload="auto"
+            onLoadedMetadata={(event) => {
+              if (event.currentTarget.currentTime === 0) {
+                event.currentTarget.currentTime = previewTime
+              }
+            }}
           >
-            <source src="/product-demo.mp4" type="video/mp4" />
+            <source src={`/product-demo.mp4#t=${previewTime}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

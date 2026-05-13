@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react"
 
-const badges = ["Award-Winning Design", "Smart Home Compatible", "Ultra-Quiet Operation"]
+const badges = ["🇬🇭 Free Delivery in Ghana", "Warranty", "Ultra-Quiet Operation"]
 
 export function TrustBadges() {
   return (

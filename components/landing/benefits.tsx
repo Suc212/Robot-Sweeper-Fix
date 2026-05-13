@@ -17,7 +17,7 @@ const benefits = [
     icon: Clock,
     title: "Auto Scheduling",
     description:
-      "Set it and leave it. SweepBot learns your routine and cleans at optimal times, returning to charge automatically.",
+      "Set a cleaning time and let SweepBot handle regular floor care while you focus on your day.",
   },
   {
     icon: Leaf,
